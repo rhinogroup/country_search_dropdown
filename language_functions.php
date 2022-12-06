@@ -22,7 +22,7 @@ function srch_local_country_drop($srch, $class=NULL){
 			$drop .= "<script type=\"text/javascript\">";
 				$drop .= "$(\"#cid_" . $data['countryid'] . "\").on(\"click\", function(){
 				let cid = \"" . $data['countryid'] . "\"
-				let val = \"" . $data['cname'] . "\"
+				let val = \"" . $data['emoji'] . " " . $data['cname'] . "\"
 				$(\"#srch_country\").val(val)
 				$(\"#init_country\").val(cid)
 				$(\".cls\").remove()
